@@ -1,0 +1,301 @@
+* {
+    font-family: "Regular";
+}
+
+.loginSec {
+    height: 100vh;
+}
+
+.hai {
+    width: 400px;
+}
+
+.fieldSec {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.fieldSec .head h1 {
+    margin-bottom: 25px;
+    color: #3d3d3d;
+    font-weight: 700;
+}
+
+.fieldSec .head h5 {
+    margin-bottom: 35px;
+    color: #3d3d3d;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+.inputFieldSec {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inputFieldSec input {
+    height: 53px;
+    border: 2px solid #3e3e3e;
+    padding-left: 20px;
+}
+
+#myInput::placeholder {
+    color: #3e3e3e;
+    font-size: 17px;
+    font-family: "bold";
+    padding-left: 10px;
+    /* Change this to the desired color */
+}
+
+.inputFieldSec .signedIn {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+.inputFieldSec button {
+    height: 53px;
+    background-color: #3c3c3c;
+    color: white;
+    font-family: "bold";
+}
+
+.footerSec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+    gap: 30px;
+}
+
+.footerSec .borderSec {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerSec .mediaSec {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.footerSec .borderSec .borderDiv {
+    border: 1px solid #cfcfcf;
+    transform: rotateZ(180deg);
+    min-width: 100px;
+}
+
+.imageSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* .a[type="checkbox"]:checked {
+    background-color: #4CAF50 !important;
+    border-color: #4CAF50;
+} */
+
+.dashBoardSec {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.dashBoardSec .header .tabCountries {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgSec {
+    width: 150px;
+    height: 80px;
+}
+
+.imgSec img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.countryDatas {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #3e3e3e;
+}
+
+.countryDetails {
+    max-height: 550px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #888888 #F5F5F5; /* For Chrome, Edge, and Safari */
+}
+.countryDetails::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+  }
+
+.tabCountries {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0 25px 0;
+}
+
+.tabCountries
+.nav-link {
+    color: #8b8b8b;
+    font-family: "bold";
+
+}
+.tabCountries h5 {
+    color: #3d3d3d;
+    font-family: "bold";
+
+}
+
+.tabCountries .nav-link.active {
+    border-bottom: 2px solid #3d3d3d;
+    color: #3d3d3d;
+
+}
+
+.dashBoardFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    gap: 20px;
+}
+.dashBoardFooter h5 {
+    color: #3d3d3d;
+    font-family: "bold";
+    font-size: 12px;
+  
+}
+.mediaSecDashboard{
+    display: flex;
+    gap: 20px;
+}
+.countryDatas .continent h6 {
+    color: #3d3d3d;
+    font-family: "bold";
+}
+.countryDatas .continent p {
+    color: #6f6f6f;
+    font-family: "Regular";
+    font-weight: 400;
+    font-size: 15px;
+}
+.toggler{
+    display: none;
+    position: relative;
+}
+.dropSec{
+    position: absolute;
+    right: 0px;
+    width: 200px;
+    padding: 20px;
+    background-color: #fff;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+    border-radius: 4px;
+    border: 0px solid #dbdade;
+}
+.expand{
+    height: 150px;
+    border: 1px solid #dbdade;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+    /* padding: 20px; */
+
+}
+.dropSec ul li{
+   line-height: 40px;
+   list-style: none;
+   position: relative;
+   cursor: pointer;
+}
+.dropSec ul li::after{
+
+content :"";
+position: absolute;
+height: 1px;
+width: 100%;
+background-color: rgb(223, 220, 220);
+left: 0;
+bottom: 0;
+opacity: 50%;
+}
+.dropSec ul{
+padding: 10px;
+}
+@media screen and (max-width: 768px) {
+    .imageSec,.nav {
+        display: none;
+    }
+    .fieldSec .head h1{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .toggler {
+        display: block!important;
+    }
+}
+/* @media screen and (max-width: 768px) {
+    .toggler {
+        display: none;
+    }
+} */
+
+@media screen and (max-width: 400px) {
+    .footerSec .borderSec .borderDiv {
+        min-width: 50px;
+    }
+}
+
+#myCheckbox {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    position: relative;
+  }
+  .inputFieldSec .signedIn #myCheckbox {
+    width: 25px;
+    height: 25px;
+  }
+  .signedIn .checkbox-label {
+    line-height: 16px;
+    font-size: 16px;
+    color: #3d3d3d;
+    font-weight: 600;
+  }
+  #myCheckbox:checked::before {
+    content: "\2713";
+    font-size: 19px;
+    font-weight: bold;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
